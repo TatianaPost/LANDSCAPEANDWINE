@@ -3480,10 +3480,14 @@ header .line-top .logo a {
   color: #ffffff;
 }
 /* NDH */
-header .line-top .contact-box {
+header .line-top {
   text-align: left;
   color: #ffffff;
-  margin-top: 55px;
+}
+header .contact-box {
+  text-align: left;
+  color: #ffffff;
+  margin-top: 44px;
   margin-left: 140px;
   width: 170px;
 }
