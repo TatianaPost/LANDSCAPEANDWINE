@@ -3479,10 +3479,13 @@ header .line-top .logo a {
   font-style: italic;
   color: #ffffff;
 }
+/* NDH */
 header .line-top .contact-box {
-  text-align: right;
+  text-align: left;
   color: #ffffff;
-  margin-top: 44px;
+  margin-top: 55px;
+  margin-left: 140px;
+  width: 170px;
 }
 header .line-top .contact-box span i {
   font-size: 14px;
