@@ -1,4 +1,8 @@
     <!-- Footer -->
+    <!-- NDH BACKGROUND FOOTER -->
+    <div class="bottom background-img">
+    </div>
+	<!-- NDH BACKGROUND FOOTER -->
     <div class="bottom green-bg">
         <div class="container">
             <div class="bottom-nav">
