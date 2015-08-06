@@ -552,6 +552,12 @@
     float: none;
     text-align: center;
   }
+  /* NDH */
+  header .contact-box {
+  text-align: center !important;
+  color: #ff0000 !important;
+  margin-top: 44px !important;
+  width: 330px !important;
 }
 @media (max-width: 600px) {
   .home-gallery h2 {
@@ -1258,4 +1264,9 @@
   footer .column-t {
     width: 100%;
   }
+  header .contact-box {
+  text-align: left !important;
+  color: #000000 !important;
+  margin-top: 0px !important;
+  width: 170px !important;
 }

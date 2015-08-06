@@ -72,7 +72,7 @@
                 } ?>
             </div>
             <div class="column-l">
-                <h3><?php _e('Contacts','aletheme'); ?></h3>
+                <h3><?php _e('Contacto','aletheme'); ?></h3>
                 <ul>
                     <?php if(ale_get_option('con_adr') != '') { ?>
                         <li><i class="fa fa-globe"></i><?php echo esc_attr(ale_get_option('con_adr')); ?></li>
