@@ -46,8 +46,8 @@
                 <?php endif; ?>
             </div>
             <div class="column-s">
-               <div class="c-form-w left">
-					<h3><?php _e('Contact form','aletheme'); ?></h3>
+               <div class="c-form-footer left">
+					<h3><?php _e('Contáctenos','aletheme'); ?></h3>
 					<form method="post" action="<?php the_permalink();?>">
 						<?php if (isset($_GET['success'])) : ?>
 							<p class="success"><?php _e('Thank you for your message!', 'aletheme')?></p>
@@ -65,24 +65,8 @@
 					</form>
 				</div>
             </div>
-            <?php /*?>
-            <div class="column-t">
-                <?php if ( has_nav_menu( 'footer_right_menu' ) ) { ?>
-                    <h3><?php _e('Users information','aletheme'); ?></h3>
-                <?php wp_nav_menu(array(
-                        'theme_location'=> 'footer_right_menu',
-                        'menu'			=> 'Footer Right Menu',
-                        'menu_class'	=> '',
-                        'walker'		=> new Aletheme_Nav_Walker(),
-                        'container'		=> '',
-                        'depth'         => 1,
-                    ));
-                } ?>
-            </div>
-            <?php */?>
-            
-            <div class="column-l">
-                <h3><?php _e('Contacto','aletheme'); ?></h3>
+                  <div class="column-l">
+                <h3><?php _e('Donde estamos','aletheme'); ?></h3>
                 <ul>
                     <?php if(ale_get_option('con_adr') != '') { ?>
                         <li><i class="fa fa-globe"></i><?php echo esc_attr(ale_get_option('con_adr')); ?></li>
@@ -94,6 +78,16 @@
                         <li><i class="fa fa-envelope-o"></i><?php echo esc_attr(ale_get_option('con_email')); ?></li>
                     <?php } ?>
                 </ul>
+            </div>
+            <div class="column-t">
+				<div id="TA_socialButtonIcon307" class="TA_socialButtonIcon">
+					<ul id="Zty8W36ryK" class="TA_links Fgh5R4yc5jC">
+					<li id="FYi0t59lPu" class="0kIM353r4Am">
+					<a target="_blank" href="http://www.tripadvisor.com.ar/Attraction_Review-g312781-d6734138-Reviews-Landscape_Wine_Private_Day_Tours-Mendoza_Province_of_Mendoza_Cuyo.html"><img src="http://www.tripadvisor.com.ar/img/cdsi/img2/branding/socialWidget/64x64_green-21690-2.png"/></a>
+					</li>
+					</ul>
+					</div>
+					<script src="http://www.jscache.com/wejs?wtype=socialButtonIcon&amp;uniq=307&amp;locationId=6734138&amp;color=green&amp;size=lg&amp;lang=es_AR&amp;display_version=2"></script>
             </div>
 			
         </div>

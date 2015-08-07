@@ -429,9 +429,11 @@
     width: 83%;
   }
   header {
-    background: url(images/slider-replacement.jpg);
+    background: url(images/header_background_landscape&wine.jpg);
     background-repeat: no-repeat;
     background-position: center;
+	background-size: cover;
+	width: 100%;
   }
   header.wrapper {
     padding: 2%;
@@ -537,7 +539,7 @@
   }
   footer .column-s,
   footer .column-l {
-    width: 48%;
+    width: 100%;
     margin-left: 0;
   }
   .bottom .bottom-nav {
@@ -1260,9 +1262,12 @@
   }
   footer .column-s,
   footer .column-l,
-  footer .column-f,
-  footer .column-t {
+  footer .column-f {
     width: 100%;
+  }
+ 
+  footer .column-t {
+  width: 90%;
   }
   /* NDH */
   header .contact-box {

@@ -112,7 +112,7 @@ $ale_h6 = ale_get_option('h6sty');
 
 	/* Header Font "Open Sans" */
 	.caption p, .btn-nav-toggle, .hot-d-cap .offer, .hot-d-cap h3, .block-text-bottom span.price, .block-text-bottom span.date, .rev-block p, .f-text p, .f-text .f-title,
-	.t-d p, .r-t-text p, .pagination ul > li a, .com-form input, .com-form textarea, .c-form-w input, .c-form-w textarea,
+	.t-d p, .r-t-text p, .pagination ul > li a, .com-form input, .com-form textarea, .c-form-w input, .c-form-w textarea, .c-form-footer input, .c-form-footer textarea,
 	.home-slider-box .slider .slides li .text h3,.home-review .slider .slides li .item .text .string, .button-offer,
 	.template-home-1-hot-deals .slider li article .col-7 h2,.template-home-1-hot-deals .slider .slides li article .col-7 .details .price,
 	.template-home-1-hot-deals .slider .slides li article .col-7 .details .date,.template-home-1-description h2,
@@ -147,7 +147,7 @@ $ale_h6 = ale_get_option('h6sty');
 	/* Header Font "Open Sans Condensed" */
 	.caption p span, .vid-text h3, .gallery_title, .flexgallery .carousel-caption p, .review-wrap h3, .o-blog h3, .column-s h3, .column-t h3, .column-l h3, .partner-h h3,
 	.atw h3, .content-title, .t-d h2, .gal-title h4, .blog-title h1, .elements h3, .post-title h2, .post-title a, ol.numbered li:before, .com-wrap h3, .com-form h3,
-	.widget h3, .r-post a h4, .c-form-w h3,.home-slider-box .slider .slides li .text h2,.home-video .text-box h3,.home-video .text-box h2,
+	.widget h3, .r-post a h4, .c-form-w h3, .c-form-footer h3,.home-slider-box .slider .slides li .text h2,.home-video .text-box h3,.home-video .text-box h2,
 	.home-gallery .slider .slides li h3,.home-gallery h2,.home-review .title h2,.template-home-1-description h3,
 	.template-home-1-team h2,.template-home-1-title h2 span,.template-home-2-blog h2,.template-home-2-rewiews h2,.template-home-2-faq h2,
 	.template-home-2-gallery .wrapper .title h3,.template-home-2-gallery .wrapper .title h2,
@@ -156,7 +156,7 @@ $ale_h6 = ale_get_option('h6sty');
 	.template-home-5-tours .titles h3,.template-home-5-info .wrapper h2,.template-nome-5-gallery .top h2,.content-title,
 	.sidebar .widget .caption,.template-blog-1 .blog-items article .text h2 a,.template-about-1-team .top h2,
 	.template-about-1-partners .top h2,.template-about-1-info .top h2,.template-about-2-team h2,.team-archive-posts h2,.tour-archive .items .text h2,
-	.about-accordion h2,.template-about-partners .top h2,.template-contact .c-form-w h3,.single-page .top h2,.blog-comments h3,.blog-comments h4,
+	.about-accordion h2,.template-about-partners .top h2,.template-contact .c-form-w h3, .c-form-footer h3,.single-page .top h2,.blog-comments h3,.blog-comments h4,
 	.template-home-4-weather .now-weather .c-now-weather,.tribe-events-meta-group .tribe-events-single-section-title {
 		<?php if($ale_thirdfont){ $thirdfontname =  str_replace ('+',' ',$ale_thirdfont); echo "font-family:".$thirdfontname.",sans-serif;"; } ?>
 	}
