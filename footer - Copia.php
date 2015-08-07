@@ -46,26 +46,18 @@
                 <?php endif; ?>
             </div>
             <div class="column-s">
-               <div class="c-form-w left">
-					<h3><?php _e('Contact form','aletheme'); ?></h3>
-					<form method="post" action="<?php the_permalink();?>">
-						<?php if (isset($_GET['success'])) : ?>
-							<p class="success"><?php _e('Thank you for your message!', 'aletheme')?></p>
-						<?php endif; ?>
-						<?php if (isset($error) && isset($error['msg'])) : ?>
-							<p class="error"><?php echo esc_attr($error['msg']);?></p>
-						<?php endif; ?>
-						<input name="contact[name]" type="text" placeholder="<?php _e('Name','aletheme'); ?>" value="<?php echo isset($_POST['contact']['name']) ? $_POST['contact']['name'] : ''?>" required >
-						<input name="contact[email]" type="email" placeholder="<?php _e('E-mail','aletheme'); ?>" value="<?php echo isset($_POST['contact']['email']) ? $_POST['contact']['email'] : ''?>" required >
-						<textarea name="contact[message]" rows="5" placeholder="<?php _e('Message','aletheme'); ?>" required><?php echo isset($_POST['contact']['message']) ? $_POST['contact']['message'] : ''?></textarea>
-						<div class="button">
-							<input type="submit" value="<?php _e('Send','aletheme'); ?>">
-						</div>
-						<?php wp_nonce_field() ?>
-					</form>
-				</div>
+                <?php if ( has_nav_menu( 'footer_left_menu' ) ) { ?>
+                    <h3><?php _e('Support','aletheme'); ?></h3>
+                <?php wp_nav_menu(array(
+                        'theme_location'=> 'footer_left_menu',
+                        'menu'			=> 'Footer Left Menu',
+                        'menu_class'	=> '',
+                        'walker'		=> new Aletheme_Nav_Walker(),
+                        'container'		=> '',
+                        'depth'         => 1,
+                    ));
+                } ?>
             </div>
-            <?php /*?>
             <div class="column-t">
                 <?php if ( has_nav_menu( 'footer_right_menu' ) ) { ?>
                     <h3><?php _e('Users information','aletheme'); ?></h3>
@@ -79,8 +71,6 @@
                     ));
                 } ?>
             </div>
-            <?php */?>
-            
             <div class="column-l">
                 <h3><?php _e('Contacto','aletheme'); ?></h3>
                 <ul>
@@ -95,7 +85,6 @@
                     <?php } ?>
                 </ul>
             </div>
-			
         </div>
     </footer>
     <!-- Scripts -->
