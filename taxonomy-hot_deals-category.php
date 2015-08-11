@@ -6,7 +6,7 @@
 	<section class="content">
 		<div class="container hotdeals-archive">
 			<div class="tcw-wrap">
-				<h1 class="content-title"><?php wp_title("", true); ?></h1>
+				<h1 class="content-title"><?php wp_title( '', true, 'right' ); ?></h1>
 				<div class="breadcrumb">
 					<?php echo get_breadcrumbs(); ?>
 				</div>

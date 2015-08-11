@@ -4520,7 +4520,7 @@ function aletheme_get_taxonomies() {
 				'hierarchical' => true,
 			),
 			'singular'    => 'Tour General',
-			'multiple'    => '',
+			'multiple'    => 'Tour General',
 		),
 		'rooms-category'    => array(
 			'for'        => array('hot_deals'),
