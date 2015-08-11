@@ -3,7 +3,6 @@
 		<div class="slider_replacement"></div>
 	</div>
 	<div class="cf"></div>
-
 	<section class="content">
 		<div class="container hotdeals-archive">
 			<div class="tcw-wrap">
@@ -12,7 +11,6 @@
 					<?php echo get_breadcrumbs(); ?>
 				</div>
 			</div>
-
 			<div class="items cf grid-system-marg">
 			<div class="gutter"></div>
 				<?php 

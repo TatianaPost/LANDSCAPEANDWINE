@@ -5610,6 +5610,7 @@ header .line-bottom .search-box form .btn-search {
 .template-home-3-hot-deals {
   position: relative;
   overflow: hidden;
+
 }
 .template-home-3-hot-deals .slider {
   width: 33.3%;
@@ -5625,6 +5626,7 @@ header .line-bottom .search-box form .btn-search {
 .template-home-3-hot-deals .slider .slides li article {
   position: relative;
 }
+/*NDH sombra slider */
 .template-home-3-hot-deals .slider .slides li article:before {
   content: "";
   display: block;
@@ -5637,6 +5639,9 @@ header .line-bottom .search-box form .btn-search {
   background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0.8)), color-stop(1, rgba(0, 0, 0, 0)));
   background: -ms-linear-gradient(bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
   background: -moz-linear-gradient(center bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-box-shadow: inset 1px 22px 9px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 1px 22px 9px -17px rgba(0,0,0,0.75);
+  box-shadow: inset 1px 22px 9px -17px rgba(0,0,0,0.75);
 }
 .template-home-3-hot-deals .slider .slides li article img {
   width: 100%;

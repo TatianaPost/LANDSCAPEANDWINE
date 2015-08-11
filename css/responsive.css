@@ -531,12 +531,15 @@
     padding: 0 2%;
     box-sizing: border-box;
   }
-  footer .column-f,
-  footer .column-t {
+  footer .column-f {
     width: 48%;
     margin-rigth: 4%;
     margin-left: 0;
   }
+  footer .column-t {
+    width: 90%;
+    margin-left: 0;
+  }  
   footer .column-s,
   footer .column-l {
     width: 100%;
