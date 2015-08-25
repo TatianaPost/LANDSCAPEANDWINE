@@ -13,7 +13,7 @@ get_header(); ?>
 	<section class="content">
 		<div class="container">
 			<div class="tcw-wrap ">
-				<h1 class="content-title"><?php wp_title( '', true, 'right' ); ?></h1>
+				<div class="content-title"><?php _e('Booking','aletheme'); ?></div>
 				<div class="breadcrumb">
 					<?php echo get_breadcrumbs(); ?>
 				</div>
