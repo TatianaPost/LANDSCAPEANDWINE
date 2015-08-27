@@ -22,10 +22,10 @@ get_header(); ?>
 			<div class="single-hot_deals">
 				<div class="tabs">
 					<ul class="tab-nav cf">
-						<li><a href="#tab-1"><?php _e('Description','aletheme'); ?></a></li>
-						<li><a href="#tab-2"><?php _e('Flights Details','aletheme'); ?></a></li>
-						<li><a href="#tab-3"><?php _e('Location','aletheme'); ?></a></li>
-						<li><a href="#tab-4"><?php _e('Reviews','aletheme'); ?></a></li>
+						<li><a href="#tab-1"><?php _e('Descripción','aletheme'); ?></a></li>
+						<li><a href="#tab-2"><?php _e('Vehículos disponibles','aletheme'); ?></a></li>
+						<li><a href="#tab-3"><?php _e('Mapa','aletheme'); ?></a></li>
+						<li><a href="#tab-4"><?php _e('Video','aletheme'); ?></a></li>
 					</ul>
 
 					<div id="tab-1" class="item cf">
