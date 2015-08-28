@@ -3916,11 +3916,11 @@ function aletheme_metaboxes($meta_boxes) {
 				),
 			),
 			array(
-				'name' => 'Fligts details',
-				'desc' => 'Insert the text',
+				'name' => 'Nuestra Flota',
+				'desc' => 'Editar Nuestra Flota',
 				'id'   => $prefix . 'hd_type_flight_details',
 				'std'  => '',
-				'type'    => 'textarea_code'
+				'type'    => 'wysiwyg'
 			),
 			array(
 				'name' => 'Type of offer',

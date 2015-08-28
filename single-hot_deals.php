@@ -96,8 +96,8 @@ get_header(); ?>
 					</div>
 
 					<div id="tab-2" class="item cf">
-						<div class="story">
-							<?php echo do_shortcode(esc_attr(ale_get_meta_gross('hd_type_flight_details'))); ?>
+						<div class="string story">
+							<?php echo ale_filtered_meta('hd_type_flight_details'); ?>
 						</div>
 					</div>
 
