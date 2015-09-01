@@ -3865,6 +3865,12 @@ function aletheme_metaboxes($meta_boxes) {
 				'type'    => 'text'
 			),
 			array(
+				'name' => 'Texto Complemento',
+				'desc' => 'Enter the price of tickets to the dollar ( Ex.: 250 ).',
+				'id'   => $prefix . 'hd_txtcomplemento',
+				'type' => 'text',
+			),
+			array(
 				'name' => 'Price of tours',
 				'desc' => 'Enter the price of tickets to the dollar ( Ex.: 250 ).',
 				'id'   => $prefix . 'hd_price',

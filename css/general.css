@@ -2429,6 +2429,12 @@ html[xmlns] .slides {
 	-moz-box-shadow: inset 1px 22px 9px -17px rgba(0,0,0,0.75);
 	box-shadow: inset 1px 22px 9px -17px rgba(0,0,0,0.75);
 }
+.boton-slide-reservar {
+	/* NDH BOTON SLIDE HOME */
+  background: #60ad4c !important;
+  font-size:14px !important;
+}
+
 .background-img {
     background: #FFF url(http://voyenbus.com.ar/wordpress/wp-content/uploads/2015/08/background_footer_landscape.png);
 	height: 125px;
@@ -5660,16 +5666,17 @@ header .line-bottom .search-box form .btn-search {
   display: inline-block;
   width: 60%;
 }
+/* SE CUSTOMIZA BOTON SLIDER HOME 3 */
 .template-home-3-hot-deals .slider .slides li article .text .left-part .offer {
   display: inline-block;
   color: #ffffff;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
   -moz-background-clip: padding;
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  padding: 6px 13px;
+  padding: 10px 25px;
   margin-bottom: 20px;
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
@@ -5678,12 +5685,16 @@ header .line-bottom .search-box form .btn-search {
   transition: all 300ms ease-in-out;
 }
 .template-home-3-hot-deals .slider .slides li article .text .left-part .offer:hover {
-  background-color: #604283;
+  background-color: #CB194D !important;
 }
+/* se customiza titulo slide home 3*/
 .template-home-3-hot-deals .slider .slides li article .text .left-part h2 {
   font-size: 26px;
   text-transform: none;
   margin-bottom: 18px;
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 36px !important;
+  font-weight: 700; 
 }
 .template-home-3-hot-deals .slider .slides li article .text .left-part h2.small {
   margin-bottom: 10px;
