@@ -41,32 +41,23 @@ get_header(); ?>
 									} ?>
 									<div class="text">
 										<div class="left-part">
-											<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                                            <?php if(ale_get_meta('hd_price') != '') { ?>
-												<span class="price"><?php echo esc_attr(ale_get_option('currency')) . esc_attr(ale_get_meta('hd_txtcomplemento')); ?></span>
-											<?php } ?>
+											<h2><a href="<?php the_permalink(); ?>"><?php echo esc_attr(ale_get_meta('hd_txttitulo')); ?></a></h2>
+                                            <h3><?php if(ale_get_meta('hd_txtsubtitulo') != '') { ?>
+												<span class="price"><?php echo esc_attr(ale_get_meta('hd_txtsubtitulo')); ?></span>
+											<?php } ?></h3>
 											<div class="string">
-												<?php echo ale_trim_excerpt(15); ?>
+												<?php echo esc_attr(ale_get_meta('hd_txtcomplemento')); ?>
 											</div>
-                                            <a href="<?php the_permalink(); ?>" class="offer boton-slide-reservar"><?php _e('RESERVAR','aletheme'); ?></a>
 										</div>
 
 										<div class="details">
 											<?php if(ale_get_meta('hd_price') != '') { ?>
 												<span class="price"><?php echo esc_attr(ale_get_option('currency')) . esc_attr(ale_get_meta('hd_price')); ?></span>
 											<?php } ?>
-
-
-											<?php if(ale_get_meta('hd_transport') != '') { ?>
-												<span>
-													<i class="fa fa-<?php echo esc_attr(ale_get_meta('hd_transport')); ?>"></i>
-												</span>
-											<?php } ?>
-
 											<?php if(ale_get_meta('hd_days') != '') { ?>
-												<span class="date"><?php echo esc_attr(ale_get_meta('hd_days')); ?> <?php _e('days','aletheme'); ?></span>
+												<div class="date"><?php echo esc_attr(ale_get_meta('hd_days')); ?></div>
 											<?php } ?>
-                                            
+                                            <a href="<?php the_permalink(); ?>" class="offer boton-slide-reservar"><?php _e('RESERVAR','aletheme'); ?></a>                                            
 										</div>
 									</div>
 								</article>

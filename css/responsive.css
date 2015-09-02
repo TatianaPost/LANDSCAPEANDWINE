@@ -191,6 +191,16 @@
     width: 25%;
     margin: 0 3.7%;
   }
+  
+}
+@media (max-width: 800px) { 
+.template-home-3-hot-deals .slider .slides li article .text .left-part .string {
+ 	display:none; 
+}
+.template-home-3-hot-deals .slider .slides li article .text .left-part h3 {
+display:none; 
+}
+  
 }
 @media (max-width: 768px) {
   .pop-up .content-wrapper .item iframe,
@@ -564,6 +574,7 @@
     float: none !important;
     margin: 0 0 20px 0 !important;
 }
+
 @media (max-width: 600px) {
   .home-gallery h2 {
     font-size: 60px;
