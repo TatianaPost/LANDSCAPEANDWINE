@@ -20,6 +20,54 @@
 /* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
 /* Grid System 12 Columns
 /* ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## */
+
+
+/* NDH CUATRO COLUMNAS HOME*/
+/* Basic Responsive Image */
+.containercolumna img {
+  /* width: 100%;*/
+  padding: 1%;
+  height: auto;
+ 
+}
+/* Responsive Images in Columns */
+.two-columns {
+  width: 48%;
+  display: inline-block;
+}
+.three-columns {
+  width: 32%;
+  display: inline-block;
+}
+/* Responsive Images with Conditional Breakpoints  */
+
+.breakpoint { /* One column for smartphones */
+  max-width: 100%;
+  display: inline-block;
+}
+@media (min-width: 420px) { /* Two columns for tablets */
+  .breakpoint {
+    max-width: 48%;
+  }
+}
+@media (min-width: 760px) { /* Four columns for large devices */
+  .breakpoint {
+    max-width: 24%;
+  }
+}
+
+
+/* Demo Page Styles: Layout */
+.containercolumna {
+  position: relative;
+  width: 96%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* FIN NDH CUATRO COLUMNAS HOME*/
+
 .col-1,
 .col-2,
 .col-3,
