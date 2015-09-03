@@ -170,9 +170,10 @@
   .template-home-3-filter {
     padding: 40px 2%;
   }
+  /*
   .template-home-3-hot-deals .slider .slides li article .text .left-part {
     width: 100%;
-  }
+  }*/
   .template-home-3-hot-deals .slider .slides li article .text .left-part .offer {
     margin-bottom: 10px;
   }
@@ -180,10 +181,10 @@
     font-size: 20px;
     margin-bottom: 10px;
   }
-  .template-home-3-hot-deals .slider .slides li article .text .details {
+  /*.template-home-3-hot-deals .slider .slides li article .text .details {
     width: 100%;
     text-align: left;
-  }
+  }*/
   .template-home-1-team h2 {
     top: 120px;
   }
