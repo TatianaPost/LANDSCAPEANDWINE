@@ -311,13 +311,26 @@ if (!function_exists('ale_testimonial')) {
 if (!function_exists('ale_team')) {
     function ale_team( $atts, $content = null ) {
         extract(shortcode_atts(array(
-            'style'   => 'light',
+            'style'   => 'dark',
             'name'    => '',
             'avatar'  => '',
             'prof'    => '',
+            'fblink'    => '',
+            'twilink'    => '',
+            'glink'    => '',
         ), $atts));
-		
-        return '<div class="ale-team '.$style.' cf"><div class="imagebox"><img src="'.$avatar.'" /></div><div class="testititle">'.$name.'</div><div class="prof">'.$prof.'</div><div class="teamtextbox">'.do_shortcode($content).'</div></div>';
+
+        if($fblink) {
+            $fbbutton = '<div class="fbbut"><a href="'.$fblink.'">Facebook</a></div>';
+        }
+        if($twilink) {
+            $twibutton = '<div class="twibut"><a href="'.$twilink.'">Twitter</a></div>';
+        }
+        if($glink) {
+            $gbutton = '<div class="gbut"><a href="'.$glink.'">Google</a></div>';
+        }
+
+        return '<div class="ale-team '.$style.' cf"><div class="imagebox"><img src="'.$avatar.'" /></div><div class="testititle">'.$name.'</div><div class="prof">'.$prof.'</div><div class="teamtextbox">'.do_shortcode($content).'</div><div class="socialbut">'.$fbbutton.$twibutton.$gbutton.'</div></div>';
     }
     add_shortcode('ale_team', 'ale_team');
 }

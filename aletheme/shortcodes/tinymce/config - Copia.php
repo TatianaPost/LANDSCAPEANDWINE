@@ -313,6 +313,15 @@ $ale_shortcodes['testimonial'] = array(
 $ale_shortcodes['team'] = array(
     'no_preview' => true,
     'params' => array(
+        'style' => array(
+            'type' => 'select',
+            'label' => __('Team box Style', 'aletheme'),
+            'desc' => __('Select the team box\'s style', 'aletheme'),
+            'options' => array(
+                'dark' => 'Dark Style',
+                'light' => 'Light Style'
+            )
+        ),
         'avatar' => array(
             'std' => '',
             'type' => 'text',
@@ -330,6 +339,24 @@ $ale_shortcodes['team'] = array(
             'type' => 'text',
             'label' => __('Team Prof', 'aletheme'),
             'desc' => __('Add the prof. team\'s author', 'aletheme'),
+        ),
+        'fblink' => array(
+            'std' => '',
+            'type' => 'text',
+            'label' => __('Facebook Link', 'aletheme'),
+            'desc' => __('Add the facebook link', 'aletheme'),
+        ),
+        'twilink' => array(
+            'std' => '',
+            'type' => 'text',
+            'label' => __('Twitter Link', 'aletheme'),
+            'desc' => __('Add the twitter link', 'aletheme'),
+        ),
+        'glink' => array(
+            'std' => '',
+            'type' => 'text',
+            'label' => __('Google+ Link', 'aletheme'),
+            'desc' => __('Add the google+ link', 'aletheme'),
         ),
         'content' => array(
             'std' => 'Testimonial Text',

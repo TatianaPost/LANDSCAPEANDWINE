@@ -456,33 +456,23 @@ a.ale-button.black:hover {
 }
 .ale-team .testititle {
     width: 100%;
-    text-align: left;
-	margin-left: 20px;
+    text-align: center;
     color:#111111;
-  font-family: 'Roboto', sans-serif;
-  font-size: 24px;
-  font-weight: 300; 
-  color: #BF375D;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 .ale-team.dark .testititle {
     color:#909090;
 }
 .ale-team .prof {
     width: 100%;
-    text-align: left;
-	margin-left: 20px;
-	margin-top: 10px;
+    text-align: center;
     font-size: 13px;
     color:#909090;
 }
 .ale-team .teamtextbox {
-    margin: 5px 20px 20px 20px;
-    text-align: left;
-	margin-left: 20px;
-	font-family: 'Roboto', sans-serif;
-	font-size: 14px;
-	font-weight: 400;
-	color: #7F7F7F;
+    margin: 10px 20px 20px 20px;
+    text-align: center;
 }
 .ale-team .socialbut {
     text-align: center;
