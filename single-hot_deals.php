@@ -74,33 +74,17 @@ get_header(); ?>
 								}
 							} ?>
 						</div>
-						<h2><?php the_title(); ?></h2>
+
 
 						<div class="string story">
 							<?php the_content(); ?>
 						</div>
-
-						<div class="details">
-							<?php if(ale_get_meta('hd_price') != '') { ?>
-								<span class="price"><?php echo esc_attr(ale_get_option('currency')) . esc_attr(ale_get_meta('hd_price')); ?></span>
-							<?php } ?>
-
-							<?php if(ale_get_meta('hd_transport') != '') { ?>
-								<i class="fa fa-<?php echo esc_attr(ale_get_meta('hd_transport')); ?> transport"></i>
-							<?php } ?>
-
-							<?php if(ale_get_meta('hd_days') != '') { ?>
-								<span class="date"><?php echo esc_attr(ale_get_meta('hd_days')); ?> <?php _e('days','aletheme'); ?></span>
-							<?php } ?>
-						</div>
 					</div>
-
 					<div id="tab-2" class="item cf">
 						<div class="string story">
 							<?php echo ale_filtered_meta('hd_type_flight_details'); ?>
 						</div>
 					</div>
-
 					<div id="tab-3" class="item cf">
 						<div class="hot-deals-map">
 						<?php echo do_shortcode('[ale_map address="'.esc_attr(ale_get_meta('hd_type_address')).'" width="100%" height="355px"]'); ?>
