@@ -95,7 +95,7 @@ get_header(); ?>
 						<?php comments_template(); ?>
 					</div>
 				</div>
-
+				<div class="titulosdescripcion">Realice su reserva</div>
 				<div class="form purple-bg">
 					<form method="post" action="<?php the_permalink();?>">
 						<?php if (isset($_GET['success'])) : ?>

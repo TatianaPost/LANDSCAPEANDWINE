@@ -16,12 +16,7 @@
 	<header class="wrapper">
 		<div class="line-top cf">
 			<div class="weather-box col-4">
-				<div class="city-wrap">
-					<a href="javascript:void(0)" class="w-select"><?php _e('Country','aletheme'); ?> <i class="fa fa-angle-down"></i></a>
-					<ul class="city-drop">
-						<?php wp_list_categories('taxonomy=hot_deals-category&title_li='); ?>
-					</ul>
-				</div>
+
 			</div>
 
 

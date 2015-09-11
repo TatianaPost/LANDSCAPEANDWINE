@@ -104,6 +104,16 @@ sup{
 	margin-bottom: -100px;
 }
 /* NDH TABLA PRECIOS FIN*/
+.titulosdescripcion {
+    width: 100%;
+    text-align: left;
+	margin-bottom: 20px;
+    color:#111111;
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  font-weight: 300; 
+  color: #BF375D;
+}
 
 /* NDH CUATRO COLUMNAS HOME*/
 /* Basic Responsive Image */
@@ -3103,6 +3113,9 @@ footer {
 .content {
   padding-top: 30px;
   position: relative;
+  -webkit-box-shadow: inset 1px 22px 9px -17px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 1px 22px 9px -17px rgba(0,0,0,0.75);
+  box-shadow: inset 1px 22px 9px -17px rgba(0,0,0,0.75);
 }
 .tcw-wrap {
   position: relative;
@@ -9669,7 +9682,7 @@ header .line-bottom .search-box form .btn-search {
 }
 .single-hot_deals .tabs .item {
   box-sizing: border-box;
-  padding: 2.6% 2.5% 4% 2.5%;
+  padding: 2.6% 2.5% 0% 2.5%;
   margin-bottom: 48px;
 }
 .single-hot_deals .tabs .item .image {

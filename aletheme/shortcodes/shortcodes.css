@@ -16,7 +16,6 @@
 
 .ale-one-half,
 .ale-one-third,
-.ale-two-third,
 .ale-three-fourth,
 .ale-one-fourth,
 .ale-one-fifth,
@@ -32,8 +31,21 @@
     line-height: 20px;
 }
 
+
+.ale-two-third {
+	position: relative;
+	margin-right: 4%;
+	padding-right: 2%;
+	float: left;
+    font-size: 13px;
+    line-height: 20px;
+	background: url(http://voyenbus.com.ar/wordpress/wp-content/uploads/2015/08/divisor-descripcion.png)  104% 0px no-repeat;
+  	max-width: 100%;	
+}
+
 .ale-column-last {
 	margin-right: 0!important;
+	margin-left: -2%;
 	clear: right;
     font-size: 13px;
     line-height: 20px;
