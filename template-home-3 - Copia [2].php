@@ -69,14 +69,86 @@ get_header(); ?>
 		<?php endif; wp_reset_query();?>
 	<?php endif; ?>
 
-	<?php if(ale_get_meta('display_template_home_3_desc')!="off"): ?>
-		<section class="template-home-3-desc ">
+	<?php if(ale_get_meta('display_template_home_3_filter')!="off"): ?>
+		<div class="template-home-3-filter wrapper">
+			<form method="post" action="<?php echo home_url('/hot_deals'); ?>" class="cf">
+				<div class="date left">
+					<div class="input">
+						<input type="text" name="in-date" class="datepicker" placeholder="<?php _e('Check in date', 'aletheme'); ?>">
+						<i class="fa fa-calendar"></i>
+					</div>
 
-						<div class="string story">
-							<?php the_content(); ?>
+					<div class="input">
+						<input type="text" name="out-date" class="datepicker" placeholder="<?php _e('Check out date', 'aletheme'); ?>">
+						<i class="fa fa-calendar"></i>
+					</div>
+				</div>
 
+				<div class="type-rooms left">
+					<select name="type" class="dropdown">
+						<option class="label"><?php _e('Type', 'aletheme');?></option>
+						<option value="bus"><?php _e('Bus', 'aletheme');?></option>
+						<option value="plane"><?php _e('Plane', 'aletheme');?></option>
+						<option value="ship"><?php _e('Ship', 'aletheme');?></option>
+					</select>
+
+					<select name="rooms" class="dropdown">
+						<option class="label"><?php _e('Rooms', 'aletheme');?></option>
+						<?php $rooms = get_terms('rooms-category');
+							foreach ($rooms  as $room) {
+								echo '<option value="' . esc_attr($room->term_id) .'">' . esc_attr($room->name) .'</option>';
+							}
+						?>
+					</select>
+				</div>
+
+				<div class="price-bath-rate left">
+					<div class="price-range">
+						<div class="rangeSlider">
+							<div class="rangeSldier__amount">
+								<label for="amount"><?php _e('Price range:','aletheme'); ?></label>
+								<div class="pricebox">
+									<div class="price-sum left">
+										<span><?php echo esc_attr(ale_get_option('currency')); ?></span>
+										<input type="text" name="price_down" value="175000" class="sliderRange__amount sliderRange__amount_first">
+									</div>
+
+									<div class="rangeSldier__scale left"></div>
+
+									<div class="price-sum left">
+										<span><?php echo esc_attr(ale_get_option('currency')); ?></span>
+										<input type="text" name="price_up" value="500000" class="sliderRange__amount sliderRange__amount_last">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<select name="baths" class="dropdown">
+						<option class="label"><?php _e('Baths', 'aletheme');?></option>
+						<?php $baths = get_terms('baths-category');
+							foreach ($baths  as $bath) {
+								echo '<option value="' . esc_attr($bath->term_id) .'">' . esc_attr($bath->name) .'</option>';
+							}
+						?>
+					</select>
+
+					<div class="rating left">
+						<span><?php _e('Ratting', 'aletheme'); ?>:</span>
+						<i class="fa fa-star star5 grey-col-icon" data-rate="5"></i>
+						<i class="fa fa-star star4 grey-col-icon" data-rate="4"></i>
+						<i class="fa fa-star star3 grey-col-icon" data-rate="3"></i>
+						<i class="fa fa-star star2 grey-col-icon" data-rate="2"></i>
+						<i class="fa fa-star star1 grey-col-icon" data-rate="1"></i>
+						<input type="text" name="rating" hidden>
+					</div>
+				</div>
+
+				<div class="button yellow-bg left">
+					<input type="submit" value="<?php _e('Quick search', 'aletheme'); ?>">
+				</div>
+			</form>
 		</div>
-		</section>
 	<?php endif; ?>
 
 

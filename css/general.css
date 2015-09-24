@@ -6430,49 +6430,12 @@ header .line-bottom .search-box form .btn-search {
 .template-home-3-testimonials article .details span {
   font-size: 14px;
 }
+/* NDH MASTER SLIDER*/
+/* Basic Responsive Image */
 .template-home-3-desc {
   position: relative;
-  padding: 11.7% 0;
-}
-.template-home-3-desc .bg-image {
-  opacity: 1;
-}
-.template-home-3-desc h2 {
-  font-size: 41px;
-  font-weight: 300;
-  color: #ffffff;
-  text-align: center;
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 5px;
-}
-.template-home-3-desc h3 {
-  font-size: 61px;
-  font-weight: 900;
-  color: #ffffff;
-  text-align: center;
-  position: relative;
-  max-width: 800px;
-  margin: 0 auto;
-  margin-bottom: 11px;
-}
-.template-home-3-desc p {
-  font-size: 13px;
-  line-height: 17px;
-  color: #ababab;
-  text-align: center;
-  position: relative;
-  max-width: 440px;
-  margin: 0 auto;
-  margin-bottom: 44px;
-}
-.template-home-3-desc hr {
-  position: relative;
-  width: 124px;
-  height: 3px;
-  border: none;
-  margin: 0 auto;
+  padding: 0% 0;
+  box-shadow: inset 1px 22px 9px -17px rgba(0,0,0,0.75);
 }
 .template-home-3-blog {
   position: relative;
@@ -11877,12 +11840,6 @@ header .line-bottom .search-box form .btn-search {
   }
   .template-home-4-slider .slider .slides li .text {
     top: 20%;
-  }
-  .template-home-3-desc h2 {
-    font-size: 30px;
-  }
-  .template-home-3-desc h3 {
-    font-size: 30px;
   }
   .template-home-3-tours {
     height: 340px;

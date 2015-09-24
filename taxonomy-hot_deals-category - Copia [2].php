@@ -58,27 +58,20 @@
 						} ?>
 
 						<div class="text">
-							<?php if($hot_deals_count==1){ ?>
-								<a href="<?php the_permalink(); ?>" class="offer boton-reservar-taxonomy"><?php _e('RESERVAR','aletheme'); ?></a>
-							<?php } ?>
-							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
+							<h3><a href="<?php the_permalink(); ?>"><?php echo esc_attr(ale_get_meta('hd_txtsubtitulo')); ?></a></h3>
 							<div class="string">
-								<?php echo ale_trim_excerpt(12); ?>
+								<?php echo esc_attr(ale_get_meta('hd_txtcomplemento')); ?>
 							</div>
 
 							<div class="details">
 								<?php if(ale_get_meta('hd_price') != '') { ?>
 									<span class="price"><?php echo esc_attr(ale_get_option('currency')) . esc_attr(ale_get_meta('hd_price')); ?></span>
 								<?php } ?>
-
-								<?php if(ale_get_meta('hd_transport') != '') { ?>
-									<i class="fa fa-<?php echo esc_attr(ale_get_meta('hd_transport')); ?> transport"></i>
-								<?php } ?>
-
 								<?php if(ale_get_meta('hd_days') != '') { ?>
-									<span class="date"><?php echo esc_attr(ale_get_meta('hd_days')); ?> <?php _e('days','aletheme'); ?></span>
+									<span class="date"><?php echo esc_attr(ale_get_meta('hd_days')); ?> <?php _e('','aletheme'); ?></span>
 								<?php } ?>
+                                <a href="<?php the_permalink(); ?>" class="offer boton-reservar-taxonomy"><?php _e('RESERVAR','aletheme'); ?></a>
 							</div>
 						</div>
 					</article>

@@ -128,11 +128,11 @@ get_header(); ?>
 
 							<div class="right">
 								<div class="button reset">
-									<input type="reset" value="<?php _e('Reset', 'aletheme'); ?>">
+									<input type="reset" value="<?php _e('CANCELAR', 'aletheme'); ?>">
 								</div>
 
 								<div class="button">
-									<input type="submit" value="<?php _e('Book now', 'aletheme'); ?>">
+									<input type="submit" value="<?php _e('RESERVAR', 'aletheme'); ?>">
 								</div>
 							</div>
 						</div>
