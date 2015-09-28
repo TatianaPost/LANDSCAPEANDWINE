@@ -2673,25 +2673,7 @@ function aletheme_metaboxes($meta_boxes) {
 			),
 		)
 	);
-	//ndh SE AGREGA TEMPLATE DE WINE TOURS
-		$meta_boxes[] = array(
-		'id'         => 'post_page_metabox',
-		'title'      => 'Post Page Options',
-		'pages'      => array( 'page', ), // Post type
-		'context'    => 'normal',
-		'priority'   => 'high',
-		'show_names' => true, // Show field names on the left
-		'show_on'    => array( 'key' => 'page-template', 'value' => array('tours-winetours-home.php'), ), // Specific post templates to display this metabox
-		'fields' => array(
-			array(
-				'name' => 'Number of posts',
-				'desc' => 'Insert number of posts',
-				'id'   => $prefix . 'post_num',
-				'std'  => '3',
-				'type' => 'text',
-			),
-		)
-	);
+
 
 	$meta_boxes[] = array(
 		'id'         => 'post_page_metabox',

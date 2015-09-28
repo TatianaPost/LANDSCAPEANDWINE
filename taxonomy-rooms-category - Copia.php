@@ -3,14 +3,16 @@
 		<div class="slider_replacement"></div>
 	</div>
 	<div class="cf"></div>
+
 	<section class="content">
 		<div class="container hotdeals-archive">
 			<div class="tcw-wrap">
-				<h1 class="content-title"><?php wp_title( '', true, 'right' ); ?></h1>
+				<h1 class="content-title"><?php wp_title("", true); ?></h1>
 				<div class="breadcrumb">
 					<?php echo get_breadcrumbs(); ?>
 				</div>
 			</div>
+
 			<div class="items cf grid-system-marg">
 			<div class="gutter"></div>
 				<?php 
@@ -59,7 +61,7 @@
 
 						<div class="text">
 							<?php if($hot_deals_count==1){ ?>
-								<a href="<?php the_permalink(); ?>" class="offer boton-reservar-taxonomy"><?php _e('RESERVAR','aletheme'); ?></a>
+								<a href="<?php the_permalink(); ?>" class="button-offer"><?php _e('special offer','aletheme'); ?></a>
 							<?php } ?>
 							<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
@@ -87,12 +89,4 @@
 			<?php ale_page_links(); ?>
 		</div>
 	</section>
-    
-<div class="containercolumna"> 
-	<a href="http://voyenbus.com.ar/wordpress/hot_deals-category/landscape-adventure/"><img class="breakpoint" src="http://voyenbus.com.ar/wordpress/wp-content/uploads/2015/09/icono-altamontana.png" width="200" height="200" /></a>
-	<a href="http://voyenbus.com.ar/wordpress/hot_deals-category/tours-privados/"><img class="breakpoint" src="http://voyenbus.com.ar/wordpress/wp-content/uploads/2015/09/icono-winetour.png" width="200" height="200" /></a>
-	<img class="breakpoint" src="http://voyenbus.com.ar/wordpress/wp-content/uploads/2015/09/icono-alojamiento.png" width="200" height="200" />
-	<img class="breakpoint" src="http://voyenbus.com.ar/wordpress/wp-content/uploads/2015/09/icono-vehiculos.png" width="200" height="200" />
-</div> 
-    
 <?php get_footer(); ?>
