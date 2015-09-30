@@ -64,7 +64,7 @@ get_header(); ?>
 							</div>
 						</article>
 					<?php endwhile; endif; wp_reset_query();?>
-
+z
 					<?php ale_custom_page_links($query_blog); ?>
 				</div>
 

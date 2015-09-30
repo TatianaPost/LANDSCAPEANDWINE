@@ -41,7 +41,7 @@ get_header(); ?>
 									} ?>
 									<div class="text">
 										<div class="left-part">
-											<h2><a href="<?php the_permalink(); ?>"><?php echo esc_attr(ale_get_meta('hd_txttitulo')); ?></a></h2>
+											<h2><a href="<?php the_permalink(); ?>"><?php echo esc_attr('hd_txttitulo'); ?></a></h2>
                                             <h3><?php if(ale_get_meta('hd_txtsubtitulo') != '') { ?>
 												<span class="price"><?php echo esc_attr(ale_get_meta('hd_txtsubtitulo')); ?></span>
 											<?php } ?></h3>

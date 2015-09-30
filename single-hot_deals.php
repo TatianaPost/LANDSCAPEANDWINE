@@ -25,7 +25,6 @@ get_header(); ?>
 						<li><a href="#tab-1"><?php _e('Descripción','aletheme'); ?></a></li>
 						<li><a href="#tab-2"><?php _e('Vehículos disponibles','aletheme'); ?></a></li>
 						<li><a href="#tab-3"><?php _e('Mapa','aletheme'); ?></a></li>
-						<li><a href="#tab-4"><?php _e('Video','aletheme'); ?></a></li>
 					</ul>
 
 					<div id="tab-1" class="item cf">
@@ -89,10 +88,6 @@ get_header(); ?>
 						<div class="hot-deals-map">
 						<?php echo do_shortcode('[ale_map address="'.esc_attr(ale_get_meta('hd_type_address')).'" width="100%" height="355px"]'); ?>
 						</div>
-					</div>
-
-					<div id="tab-4" class="item cf">
-						<?php comments_template(); ?>
 					</div>
 				</div>
 				<div class="titulosdescripcion">Realice su reserva</div>
