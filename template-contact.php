@@ -63,7 +63,7 @@ get_header(); ?>
 					<h3><?php _e('Contact form','aletheme'); ?></h3>
 					<form method="post" action="<?php the_permalink();?>">
 						<?php if (isset($_GET['success'])) : ?>
-							<p class="success"><?php _e('Thank you for your message!', 'aletheme')?></p>
+							<p class="success"><?php _e('Gracias por su mensaje!', 'aletheme')?></p>
 						<?php endif; ?>
 						<?php if (isset($error) && isset($error['msg'])) : ?>
 							<p class="error"><?php echo esc_attr($error['msg']);?></p>
