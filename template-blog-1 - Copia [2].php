@@ -1,6 +1,6 @@
 <?php
 /*
-  * Template name: Template Blog 3
+  * Template name: Template Blog 1
   * */
 get_header(); ?>
 	<div class="header-image-box simple-page">
@@ -13,7 +13,7 @@ get_header(); ?>
 			<div class="tcw-wrap ">
 				<h1 class="content-title"><?php _e('Blog','aletheme'); ?></h1>
 				<div class="breadcrumb">
-					<a href="<?php echo home_url(); ?>"><?php _e('Homepage','aletheme'); ?></a><span>&#8594;</span><span><?php _e('Wine Tours','aletheme'); ?></span>
+					<a href="<?php echo home_url(); ?>"><?php _e('Homepage','aletheme'); ?></a><span>&#8594;</span><span><?php _e('Blog','aletheme'); ?></span>
 				</div>
 			</div>
 
@@ -64,7 +64,7 @@ get_header(); ?>
 							</div>
 						</article>
 					<?php endwhile; endif; wp_reset_query();?>
-z
+
 					<?php ale_custom_page_links($query_blog); ?>
 				</div>
 

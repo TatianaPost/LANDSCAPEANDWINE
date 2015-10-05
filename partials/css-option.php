@@ -209,7 +209,7 @@ $ale_h6 = ale_get_option('h6sty');
 	.hotdeals-archive .items .grid-item .text h3 a:hover,.tour-archive .items .image .text h2 a:hover,
 	.team-archive-top-post article .text h2 a:hover,.team-archive-posts .items article .text h3 a:hover,.story blockquote:before,.story a,
 	.story ul > li:before,.story ol > li:before,.sidebar .widget a:hover,.template-home-4-slider .slider .slides li .text h2 a:hover,
-	.template-nome-5-gallery .items .grid-item .text h3 a:hover,.template-blog-1 tours-winetours-home .blog-items article .text h2 a:hover,
+	.template-nome-5-gallery .items .grid-item .text h3 a:hover,.template-blog-1 .blog-items article .text h2 a:hover,
 	.woocommerce ul.products li.product .price,.woocommerce div.product div.summary .woocommerce-review-link,
 	.woocommerce div.product span.price, .woocommerce div.product p.price,.woocommerce div.product .product_meta a,
 	.widget_archive ul li:before, .widget_categories ul li:before, .widget_pages ul li:before, .widget_meta ul li:before, .widget_nav_menu ul li:before{

@@ -1,6 +1,6 @@
 <?php
 /*
-  * Template name: Template Blog 1
+  * Template name: Template Blog 4
   * */
 get_header(); ?>
 	<div class="header-image-box simple-page">
