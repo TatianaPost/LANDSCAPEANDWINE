@@ -104,23 +104,23 @@ function ale_contact_email_send($data) {
 		}
 
 		if(isset($data['name'])){
-			$name = "Name: ".$data['name'];
+			$name = "Nombre: ".$data['name'];
 		}
 
 		if(isset($data['last-name'])){
-			$last_name = "Last-name: ".$data['last-name'];
+			$last_name = "Apellido: ".$data['last-name'];
 		}
 
 		if(isset($data['last-name'])){
-			$country = "Country: ".$data['country'];
+			$country = "País: ".$data['country'];
 		}
 
 		if(isset($data['address'])){
-			$address = "Address: ".$data['address'];
+			$address = "Ciudad: ".$data['address'];
 		}
 
 		if(isset($data['phone'])){
-			$phone = "Phone: ".$data['phone'];
+			$phone = "Telefono: ".$data['phone'];
 		}
 
 		if(isset($data['email'])){
@@ -128,14 +128,14 @@ function ale_contact_email_send($data) {
 		}
 
 		if(isset($data['date'])){
-			$date = "Date: ".$data['date'];
+			$date = "Fecha: ".$data['date'];
 		}
 
 		if(isset($data['adults'])){
-			$adults = "Adults: ".$data['adults'];
+			$adults = "Adultos: ".$data['adults'];
 		}
 
-		$subject = 'New contact message from ' . $blog;
+		$subject = 'CONTACTO WEB ' . $blog;
 		$body = "
 			{$title}
 
@@ -164,7 +164,7 @@ function ale_contact_email_send($data) {
 			------------
 
 
-			Sent from {$blog}
+			Enviado {$blog}
 		";
 
 		$ale_mail_from->setName($data['name'])->setEmail($data['email'])->addFilters();

@@ -50,16 +50,16 @@
 					<h3><?php _e('Contáctenos','aletheme'); ?></h3>
 					<form method="post" action="<?php the_permalink();?>">
 						<?php if (isset($_GET['success'])) : ?>
-							<p class="success"><?php _e('Thank you for your message!', 'aletheme')?></p>
+							<p class="success"><?php _e('Gracias por su mensaje!', 'aletheme')?></p>
 						<?php endif; ?>
 						<?php if (isset($error) && isset($error['msg'])) : ?>
 							<p class="error"><?php echo esc_attr($error['msg']);?></p>
 						<?php endif; ?>
-						<input name="contact[name]" type="text" placeholder="<?php _e('Name','aletheme'); ?>" value="<?php echo isset($_POST['contact']['name']) ? $_POST['contact']['name'] : ''?>" required >
+						<input name="contact[name]" type="text" placeholder="<?php _e('Nombre','aletheme'); ?>" value="<?php echo isset($_POST['contact']['name']) ? $_POST['contact']['name'] : ''?>" required >
 						<input name="contact[email]" type="email" placeholder="<?php _e('E-mail','aletheme'); ?>" value="<?php echo isset($_POST['contact']['email']) ? $_POST['contact']['email'] : ''?>" required >
-						<textarea name="contact[message]" rows="5" placeholder="<?php _e('Message','aletheme'); ?>" required><?php echo isset($_POST['contact']['message']) ? $_POST['contact']['message'] : ''?></textarea>
+						<textarea name="contact[message]" rows="5" placeholder="<?php _e('Mensaje','aletheme'); ?>" required><?php echo isset($_POST['contact']['message']) ? $_POST['contact']['message'] : ''?></textarea>
 						<div class="button">
-							<input type="submit" value="<?php _e('Send','aletheme'); ?>">
+							<input type="submit" value="<?php _e('Enviar','aletheme'); ?>">
 						</div>
 						<?php wp_nonce_field() ?>
 					</form>

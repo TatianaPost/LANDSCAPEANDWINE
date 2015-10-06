@@ -94,32 +94,29 @@ get_header(); ?>
 				<div class="form purple-bg">
 					<form method="post" action="<?php the_permalink();?>">
 						<?php if (isset($_GET['success'])) : ?>
-							<p class="success"><?php _e('Thank you for your message!', 'aletheme')?></p>
+							<p class="success"><?php _e('RESERVACIÓN REALIZADA!!! &nbsp;Nos contactaremos a la brevedad con usted. Muchas Gracias.', 'aletheme')?></p>
 						<?php endif; ?>
 						<div class="form-inner cf">
 							<input type="email" name="contact[email]" placeholder="<?php _e('E-mail', 'aletheme'); ?>" required>
-							<input type="text" name="contact[name]" placeholder="<?php _e('First name', 'aletheme'); ?>" required>
-							<input type="text" name="contact[last-name]" placeholder="<?php _e('Last name', 'aletheme'); ?>" required>
-							<input type="text" name="contact[country]" placeholder="<?php _e('Country', 'aletheme'); ?>" required>
-							<input type="text" name="contact[address]" placeholder="<?php _e('Adrress', 'aletheme'); ?>" required>
-							<input type="text" name="contact[phone]" placeholder="<?php _e('Phone number', 'aletheme'); ?>" required>
-							<input type="text" name="contact[date]" placeholder="<?php _e('Arriving date', 'aletheme'); ?>">
+							<input type="text" name="contact[name]" placeholder="<?php _e('Nombre', 'aletheme'); ?>" required>
+							<input type="text" name="contact[last-name]" placeholder="<?php _e('Apellido', 'aletheme'); ?>" required>
+							<input type="text" name="contact[country]" placeholder="<?php _e('Pais', 'aletheme'); ?>" required>
+							<input type="text" name="contact[address]" placeholder="<?php _e('Ciudad', 'aletheme'); ?>" required>
+							<input type="text" name="contact[phone]" placeholder="<?php _e('Teléfono', 'aletheme'); ?>" required>
+							<input type="text" name="contact[date]" placeholder="<?php _e('Fecha de arrivo', 'aletheme'); ?>">
 							<select class="dropdown" name="contact[adults]">
-								<option><?php _e('Adults 1', 'aletheme'); ?></option>
-								<option><?php _e('Adults 2', 'aletheme'); ?></option>
-								<option><?php _e('Adults 3', 'aletheme'); ?></option>
-								<option><?php _e('Adults 4', 'aletheme'); ?></option>
-								<option><?php _e('Adults 5', 'aletheme'); ?></option>
-								<option><?php _e('Adults 6', 'aletheme'); ?></option>
+								<option><?php _e('Adulto 1', 'aletheme'); ?></option>
+								<option><?php _e('Adulto 2', 'aletheme'); ?></option>
+								<option><?php _e('Adulto 3', 'aletheme'); ?></option>
+								<option><?php _e('Adulto 4', 'aletheme'); ?></option>
+								<option><?php _e('Adulto 5', 'aletheme'); ?></option>
+								<option><?php _e('Adulto 6', 'aletheme'); ?></option>
 							</select>
-							<textarea name="contact[message]" placeholder="<?php _e('Message', 'aletheme'); ?>" required></textarea>
+							<textarea name="contact[message]" placeholder="<?php _e('Mensaje', 'aletheme'); ?>" required></textarea>
 						</div>
 
 						<div class="form-bottom green-bg cf">
-							<label>
-								<input type="checkbox" name="contact[accept]" value="on" required>
-								<span><?php _e('Accept the Terms of Conditions', 'aletheme'); ?></span>
-							</label>
+
 
 							<div class="right">
 								<div class="button reset">
