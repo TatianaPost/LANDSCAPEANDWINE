@@ -11,9 +11,9 @@ get_header(); ?>
 	<section class="content">
 		<div class="wrapper">
 			<div class="tcw-wrap ">
-				<h1 class="content-title"><?php _e('Blog','aletheme'); ?></h1>
+				<h1 class="content-title"><?php _e('Novedades','aletheme'); ?></h1>
 				<div class="breadcrumb">
-					<a href="<?php echo home_url(); ?>"><?php _e('Homepage','aletheme'); ?></a><span>&#8594;</span><span><?php _e('Blog','aletheme'); ?></span>
+					<a href="<?php echo home_url(); ?>"><?php _e('Homepage','aletheme'); ?></a><span>&#8594;</span><span><?php _e('Novedades','aletheme'); ?></span>
 				</div>
 			</div>
 
@@ -46,16 +46,12 @@ get_header(); ?>
 								} else{
 									echo '<img src="http://placehold.it/675x338/eeeeee/636363&amp;text=No+image" alt>';
 								} ?>
-								<a href="<?php the_permalink(); ?>" class="green-bg"><?php _e('Traveling', 'aletheme'); ?></a>
+								<a href="<?php the_permalink(); ?>" class="offer boton-reservar-taxonomy"><?php _e('Mas informacion', 'aletheme'); ?></a>
 							</div>
 
 							<div class="text cf">
 								<div class="col-5">
 									<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-									<div class="details">
-										<span class="date"><?php the_time('j D Y'); ?></span>
-										<span><i class="fa fa-comment"></i> <?php $comments_count = wp_count_comments($post->ID); echo esc_attr($comments_count->total_comments); ?></span>
-									</div>
 								</div>
 
 								<div class="col-7 string">

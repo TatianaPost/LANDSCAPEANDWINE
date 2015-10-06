@@ -9,7 +9,7 @@
 			<div class="tcw-wrap ">
 				<h1 class="content-title"><?php wp_title("", true); ?></h1>
 				<div class="breadcrumb">
-					<a href="<?php echo home_url(); ?>"><?php _e('Homepage','aletheme'); ?></a><span>&#8594;</span><span><?php _e('Blog','aletheme'); ?></span>
+					<a href="<?php echo home_url(); ?>"><?php _e('Homepage','aletheme'); ?></a><span>&#8594;</span><span><?php _e('Novedades','aletheme'); ?></span>
 				</div>
 			</div>
 
