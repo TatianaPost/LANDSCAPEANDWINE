@@ -97,6 +97,31 @@ function ale_send_contact($data) {
 function ale_contact_email_send($data) {
 	global $ale_mail_from;
 	try {
+		
+		
+		// PREPARE THE BODY OF THE MESSAGE
+
+			$imageheader = '<html><body>';
+			$imageheader .= '<img src="http://voyenbus.com.ar/wordpress/wp-content/uploads/2015/05/mail-header.jpg" alt="Website Change Request" />';
+			$imageheader .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
+			$imageheader .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . strip_tags($_POST['req-name']) . "</td></tr>";
+			$imageheader .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['req-email']) . "</td></tr>";
+			$imageheader .= "<tr><td><strong>Type of Change:</strong> </td><td>" . strip_tags($_POST['typeOfChange']) . "</td></tr>";
+			$imageheader .= "<tr><td><strong>Urgency:</strong> </td><td>" . strip_tags($_POST['urgency']) . "</td></tr>";
+			$imageheader .= "<tr><td><strong>URL To Change (main):</strong> </td><td>" . $_POST['URL-main'] . "</td></tr>";
+			$addURLS = $_POST['addURLS'];
+			if (($addURLS) != '') {
+			    $imageheader .= "<tr><td><strong>URL To Change (additional):</strong> </td><td>" . strip_tags($addURLS) . "</td></tr>";
+			}
+			$curText = htmlentities($_POST['curText']);           
+			if (($curText) != '') {
+			    $message .= "<tr><td><strong>CURRENT Content:</strong> </td><td>" . $curText . "</td></tr>";
+			}
+			$imageheader .= "<tr><td><strong>NEW Content:</strong> </td><td>" . htmlentities($_POST['newText']) . "</td></tr>";
+			$imageheader .= "</table>";
+			$imageheader .= "</body></html>";
+	
+		
 		$blog = get_bloginfo('name');
 
 		if(isset($data['title'])){
@@ -134,10 +159,16 @@ function ale_contact_email_send($data) {
 		if(isset($data['adults'])){
 			$adults = "Adultos: ".$data['adults'];
 		}
+		
+			$headers .= "MIME-Version: 1.0\r\n";
+			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-		$subject = 'CONTACTO WEB ' . $blog;
+		$subject = 'CONTACTO test ' . $blog;
+
 		$body = "
 			{$title}
+			
+			{$imageheader}
 
 			{$name}
 
@@ -169,7 +200,7 @@ function ale_contact_email_send($data) {
 
 		$ale_mail_from->setName($data['name'])->setEmail($data['email'])->addFilters();
 			
-		wp_mail(get_option('admin_email'), $subject, $body);
+		wp_mail(get_option('admin_email'), $subject, $body, $headers);
 	} catch (Exception $e) {
 		
 	}

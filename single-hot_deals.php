@@ -15,7 +15,7 @@ get_header(); ?>
 			<div class="tcw-wrap ">
 				<h1 class="content-title"><?php wp_title( '', true, 'right' ); ?></h1>
 				<div class="breadcrumb">
-					<?php echo get_breadcrumbs(); ?>
+					<a href="javascript:history.go(-1)"><img src="http://voyenbus.com.ar/wordpress/wp-content/uploads/2015/05/volver.png" width="24" height="24" /></a><a href="javascript:history.go(-1)">Volver</a>
 				</div>
 			</div>
 
