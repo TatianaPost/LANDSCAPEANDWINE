@@ -103,72 +103,78 @@ function ale_contact_email_send($data) {
 
 			$imageheader = '<html><body>';
 			$imageheader .= '<img src="http://voyenbus.com.ar/wordpress/wp-content/uploads/2015/05/mail-header.jpg" alt="Website Change Request" />';
-			$imageheader .= '<table rules="all" style="border-color: #666;" cellpadding="10">';
-			$imageheader .= "<tr style='background: #eee;'><td><strong>Name:</strong> </td><td>" . strip_tags($_POST['req-name']) . "</td></tr>";
-			$imageheader .= "<tr><td><strong>Email:</strong> </td><td>" . strip_tags($_POST['req-email']) . "</td></tr>";
-			$imageheader .= "<tr><td><strong>Type of Change:</strong> </td><td>" . strip_tags($_POST['typeOfChange']) . "</td></tr>";
-			$imageheader .= "<tr><td><strong>Urgency:</strong> </td><td>" . strip_tags($_POST['urgency']) . "</td></tr>";
-			$imageheader .= "<tr><td><strong>URL To Change (main):</strong> </td><td>" . $_POST['URL-main'] . "</td></tr>";
-			$addURLS = $_POST['addURLS'];
-			if (($addURLS) != '') {
-			    $imageheader .= "<tr><td><strong>URL To Change (additional):</strong> </td><td>" . strip_tags($addURLS) . "</td></tr>";
-			}
-			$curText = htmlentities($_POST['curText']);           
-			if (($curText) != '') {
-			    $message .= "<tr><td><strong>CURRENT Content:</strong> </td><td>" . $curText . "</td></tr>";
-			}
-			$imageheader .= "<tr><td><strong>NEW Content:</strong> </td><td>" . htmlentities($_POST['newText']) . "</td></tr>";
-			$imageheader .= "</table>";
 			$imageheader .= "</body></html>";
 	
 		
 		$blog = get_bloginfo('name');
 
 		if(isset($data['title'])){
-			$title = "Tour: ".$data['title'];
+			
+			$title = '<html><body>';
+			$title .= "Tour: ".$data['title'];
+			$title .= "</body></html>";
 		}
 
 		if(isset($data['name'])){
-			$name = "Nombre: ".$data['name'];
+			$name = '<html><body>';
+			$name .= "Nombre: ".$data['name'];
+			$name .= "</body></html>";
 		}
 
 		if(isset($data['last-name'])){
-			$last_name = "Apellido: ".$data['last-name'];
+			$last_name = '<html><body>';
+			$last_name .= "Apellido: ".$data['last-name'];
+			$last_name .= "</body></html>";
 		}
 
 		if(isset($data['last-name'])){
-			$country = "País: ".$data['country'];
+			$country = '<html><body>';
+			$country .= "Pais: ".$data['country'];
+			$country .= "</body></html>";
 		}
 
 		if(isset($data['address'])){
-			$address = "Ciudad: ".$data['address'];
+			$address = '<html><body>';
+			$address .= "Ciudad: ".$data['address'];
+			$address .= "</body></html>";
 		}
 
 		if(isset($data['phone'])){
-			$phone = "Telefono: ".$data['phone'];
+			$phone = '<html><body>';
+			$phone .= "Telefono: ".$data['phone'];
+			$phone .= "</body></html>";
 		}
 
 		if(isset($data['email'])){
-			$email = "Email: ".$data['email'];
+			$email = '<html><body>';
+			$email .= "Email: ".$data['email'];
+			$email .= "</body></html>";
 		}
 
 		if(isset($data['date'])){
-			$date = "Fecha: ".$data['date'];
+			$date = '<html><body>';
+			$date .= "Fecha: ".$data['date'];
+			$date .= "</body></html>";
 		}
 
 		if(isset($data['adults'])){
-			$adults = "Adultos: ".$data['adults'];
+			$adults = '<html><body>';
+			$adults .= "Adultos: ".$data['adults'];
+			$adults .= "</body></html>";
 		}
 		
 			$headers .= "MIME-Version: 1.0\r\n";
-			$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+			$headers .= 'Content-type: text/html; charset=utf-8'."\r\n";
 
-		$subject = 'CONTACTO test ' . $blog;
+		$subject = 'CONTACTO WEB ' . $blog;
 
 		$body = "
-			{$title}
-			
+		
 			{$imageheader}
+			
+			&nbsp;
+		
+			{$title}
 
 			{$name}
 
@@ -187,15 +193,16 @@ function ale_contact_email_send($data) {
 			{$adults}
 
 
-			Message:
+			Mensaje:
 
 			{$data['message']}
-
-
+			
+			&nbsp;
+			
 			------------
 
 
-			Enviado {$blog}
+			Enviado desde {$blog}
 		";
 
 		$ale_mail_from->setName($data['name'])->setEmail($data['email'])->addFilters();
