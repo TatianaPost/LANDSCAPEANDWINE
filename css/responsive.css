@@ -109,6 +109,13 @@
   }
 }
 @media (max-width: 1024px) {
+	.template-home-3-hot-deals .slider .slides li article .text .left-part .string {
+ 	display:none; 
+}
+
+	.template-home-3-hot-deals .slider .slides li article .text .left-part h2 {
+	 margin-bottom: 0px !important;
+}
   .pop-up .content-wrapper {
     width: 100%;
     left: 0;
