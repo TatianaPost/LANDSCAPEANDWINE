@@ -10111,8 +10111,8 @@ header .line-bottom .search-box form .btn-search {
   padding: 40px 0;
 }
 .page-content {
-  border-top: 1px dashed #cccccc;
-  padding-top: 40px;
+  border-top: 1px dashed #ffffff;
+  padding-top: 20px;
 }
 .page-content .main-content {
   width: 70.4%;
@@ -10122,8 +10122,8 @@ header .line-bottom .search-box form .btn-search {
   width: 25.6%;
 }
 .template-contact .c-wrap {
-  padding: 35px 0px;
-  border-top: 1px dashed #cccccc;
+  padding: 20px 0px 35px 0px;
+  border-top: 1px dashed #ffffff;
   overflow: hidden;
 }
 .template-contact .c-content {
@@ -10641,7 +10641,7 @@ header .line-bottom .search-box form .btn-search {
 }
 .sidebar .widget {
   padding-bottom: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 5px;
 }
 .sidebar .widget .caption {
   font-size: 24px;

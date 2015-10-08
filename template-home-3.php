@@ -57,7 +57,7 @@ get_header(); ?>
 											<?php if(ale_get_meta('hd_days') != '') { ?>
 												<div class="date"><?php echo esc_attr(ale_get_meta('hd_days')); ?></div>
 											<?php } ?>
-                                            <a href="<?php the_permalink(); ?>" class="offer boton-slide-reservar"><?php _e('RESERVAR','aletheme'); ?></a>                                            
+                                            <a href="<?php the_permalink(); ?>" class="offer boton-slide-reservar"><?php _e('+ INFORMACION','aletheme'); ?></a>                                            
 										</div>
 									</div>
 								</article>
