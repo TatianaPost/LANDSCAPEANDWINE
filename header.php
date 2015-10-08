@@ -55,12 +55,7 @@
 				} ?>
 			</nav>
 			
-			<div class="search-box">
-				<form role="search" method="get" id="searchform" action="<?php echo site_url()?>" class="purple-bg">
-					<input type="search" class="search-inp" value="<?php echo get_search_query(); ?>" name="s" placeholder="<?php _e('Keywords','aletheme'); ?>" />
-					<button type="submit" class="btn-search" id="searchsubmit"><i class="fa fa-search"></i></button>
-				</form>
-			</div>
+
 		</div>
 	</header>
 

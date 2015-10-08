@@ -8,9 +8,9 @@
 	<section class="content">
 		<div class="wrapper">
 			<div class="tcw-wrap ">
-				<h1 class="content-title"><?php _e('Blog','aletheme'); ?></h1>
+				<h1 class="content-title"><?php _e('Novedades','aletheme'); ?></h1>
 				<div class="breadcrumb">
-					<?php echo get_breadcrumbs(); ?>
+					<a href="javascript:history.go(-1)"><img src="http://voyenbus.com.ar/wordpress/wp-content/uploads/2015/05/volver.png" width="24" height="24" /></a><a href="javascript:history.go(-1)">Volver</a>
 				</div>
 			</div>
 
@@ -39,36 +39,13 @@
 						);
 						$attachments = get_posts( $args );
 						if ( $attachments ) { ?>
-							<span class="overlay"><span class="purple-bg"></span><i class="fa fa-plus"></i></span>
 
-							<div class="pop-up">
-								<div class="content-wrapper">
-									<div class="exit"><i class="fa fa-times"></i></div>
-									<div class="item slider">
-										<ul class="slides">
-											<?php foreach ( $attachments as $attachment ) { ?>
-												<li data-thumb="<?php echo esc_url($attachment->guid); ?>">
-													<?php echo wp_get_attachment_image( $attachment->ID, 'gallery-big' ); ?>
-												</li>
-											<?php } ?>
-										</ul>
-									</div>
-								</div>
-							</div>
+							
 						<?php } ?>
 					</div>
 
 					<div class="top">
 						<h2><?php the_title(); ?></h2>
-						<div class="details">
-							<span class="date"><?php echo the_time('j M Y'); ?></span>
-							<span class="comments"><i class="fa fa-comment"></i> <?php comments_number('0','1','%')?></span>
-							<?php $category = get_the_category();
-								foreach ($category as $cat) {
-									echo '<span class="category">' . esc_attr($cat->cat_name) . '</span>';
-								}
-							?>
-						</div>
 					</div>
 
 					<div class="story">
@@ -76,7 +53,6 @@
 						<?php wp_link_pages(); ?>
 					</div>
 
-					<?php comments_template(); ?>
 				</div>
 				
 				<?php get_sidebar(); ?>

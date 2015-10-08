@@ -4440,7 +4440,7 @@ function aletheme_get_post_types() {
 				'show_in_nav_menus'=> true,
 			),
 			'singular' => 'Tour',
-			'multiple' => 'Tour admin',
+			'multiple' => 'Tours',
 			'columns'    => array(
 				'first_image',
 			)
